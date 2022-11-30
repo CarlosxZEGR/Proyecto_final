@@ -1,7 +1,14 @@
-<!DOCTYPE html>
 <?php
     session_start();
+    include("Funcion.php");
+    if (isset($_SESSION['sesion']) && $_SESSION['type'] == 1) {
+        $usuario = $_SESSION['sesion'];
+        $id = $_SESSION['id'];
+    }
+    $nombre = strtoupper($usuario);
+    $id1 = strtoupper($id);
 ?>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Unirse a Partida</title>
@@ -15,7 +22,7 @@
         <h2 style="color:white" style="background-color:grey">Partidas disponibles</h2>
         <?php
         include("Funcion.php");
-        $cnn=Conectar();
+        $cnn = Conectar();
             $sql="SELECT * FROM party p INNER JOIN usuario u ON p.host = u.id_usuario";
             $resul = mysqli_query($cnn,$sql);
 

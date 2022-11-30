@@ -11,11 +11,6 @@
             <a href="Index.php"><img src="aiep_logo.png" width="200" height="70"></a>
             
         </header>
-        
-
-            
-                    
-
             <center>
             <form  name="" method="Post">
             
@@ -48,7 +43,7 @@
                         $Gmail = $_POST['txtGmail'];
 
                         
-                        $sql = "insert into usuario(name,password,gmail,type_user) values('$User','$Pass','$Gmail',1)";
+                        $sql = "INSERT INTO usuario(user,pass,gmail,type_user) values('$User','$Pass','$Gmail',1)";
                         
                         mysqli_query($cnn,$sql);
                         echo "<script>alert('Felicidades, te has registrado exitosamente)</script>";

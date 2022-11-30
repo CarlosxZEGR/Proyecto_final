@@ -1,3 +1,7 @@
+<?php/*
+session_start();
+$username = $_SESSION['username'];*/
+?>
 <html>
     <head>
         <title>AIEP GAMING</title>
@@ -46,15 +50,15 @@
         <footer style="background-color:grey">
             <table>
                 <tr>
-                    <colspan="3"<td><h3 style="color:white">contactos</h3></td>
+                    <colspan="3"><td><h3 style="color:white">contactos</h3></td>
                 </tr>
                 <tr>
-                    <colspan="3"<td><h5 style="color:white"> Estamos en redes sociales. Siguenos y mantente informado.</h3></td>
+                    <colspan="3"><td><h5 style="color:white"> Estamos en redes sociales. Siguenos y mantente informado.</h3></td>
                 </tr>
                 <tr>
-                    <colspan="3"<td><img src="gmail_logo.png" height="40" widht="40"></td>
-                    <colspan="3"<td><img src="twitch_logo.png" height="40" width="40"></td>
-                    <colspan="3"<td><img src="instagram_logo.png" height="40" width="40"></td>
+                    <colspan="3"><td><a href="https://chat.whatsapp.com/EtUJCUQiNMb60UF2ZmdZxS"><img src="wa_logo.png" height="40" widht="40"></td>
+                    <colspan="3"><td><a href="https://www.twitch.tv/gamingtoaiep"><img src="twitch_logo.png" height="40" width="40"></td>
+                    <colspan="3"><td><img src="instagram_logo.png" height="40" width="40"></td>
                 </tr>
             </table>
         </footer>
