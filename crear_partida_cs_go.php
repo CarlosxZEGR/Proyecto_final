@@ -15,7 +15,7 @@
         <link rel="icon" href="icono_aiep..ico">
     </head>
     <body background="cs_go_fondo.jpg" >
-        
+        <?php error_reporting(0); ?>
         
         <header style="background-color:#36469B">
                     <p align="right"><img  src="icono_usuario.png" height="33.51" width="44" align="right"><a href="Agregar_usuario-1.php">Registrarse </a></p>

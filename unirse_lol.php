@@ -1,14 +1,4 @@
-<?php
-    session_start();
-    include("Funcion.php");
-    if (isset($_SESSION['sesion']) && $_SESSION['type'] == 1) {
-        $usuario = $_SESSION['sesion'];
-        $id = $_SESSION['id'];
-    }
-    $nombre = strtoupper($usuario);
-    $id1 = strtoupper($id);
-?>
-input type="datetime-local" name="dateTime"
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -20,7 +10,8 @@ input type="datetime-local" name="dateTime"
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body background="cs_go_fondo.jpg">
+<body background="lol_fondo.png">
+    <?php error_reporting(0); ?>
     <header style="background-color:#36469B">
             <p align="right"><img  src="icono_usuario.png" height="33.51" width="44" align="right"></p>
             <a href="Index.php"><img src="aiep_logo.png" width="200" height="70"></a>
@@ -47,7 +38,14 @@ input type="datetime-local" name="dateTime"
             if ($_POST['btnIns'] == "Inscribirse"){
                 $dt = $_POST['dateTime'];
                 $cnn = Conectar();
-                $sql = "INSERT INTO waiting_list VALUES (NULL,$id1,'$dt',0)";
+                $sql = "INSERT INTO waiting_list VALUES (NULL,$id1,'$dt',1)";
+                
+                if($resul = $cnn->query($sql)){
+                    echo "registrado";
+                }else{
+                    echo "fallido registro";
+                    echo mysqli_error($cnn);
+                }
             }
         ?>
 </body>

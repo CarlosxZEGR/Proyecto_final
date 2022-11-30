@@ -42,11 +42,7 @@ $username = $_SESSION['username'];*/
                     <li style="color:red" onMouseover="this.style.color='white'" onMouseout="this.style.color='red'"><a style="color:red" onMouseover="this.style.color='white'" onMouseout="this.style.color='red'" href="https://www.g2a.com/es/"><h3>G2A</h3></a></li>
                 </ul>
             </nav>
-            <center style="color:red">Revisa nuestro calendario para que sepas cuando te toca</center> 
-            <center>               
-                <colspan="3"><img src="calendario_index.png" align="center">
-                <colspan="3"><img src="chat.png" height="400" width="350" align="right">
-            </center>
+            
         <footer style="background-color:grey">
             <table>
                 <tr>
@@ -58,7 +54,7 @@ $username = $_SESSION['username'];*/
                 <tr>
                     <colspan="3"><td><a href="https://chat.whatsapp.com/EtUJCUQiNMb60UF2ZmdZxS"><img src="wa_logo.png" height="40" widht="40"></td>
                     <colspan="3"><td><a href="https://www.twitch.tv/gamingtoaiep"><img src="twitch_logo.png" height="40" width="40"></td>
-                    <colspan="3"><td><img src="instagram_logo.png" height="40" width="40"></td>
+
                 </tr>
             </table>
         </footer>
